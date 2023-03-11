@@ -38,7 +38,8 @@ Extensions.
 -----
 # Task 2. (Obsidian Plugin)
 1. Use this obsidian vault: [ZenithResearch/ObsidianVault: Boilerplate of our vault. (github.com)](https://github.com/ZenithResearch/ObsidianVault)
-2. You can find a sample obsidian plugin here: [obsidianmd/obsidian-sample-plugin (github.com)](https://github.com/obsidianmd/obsidian-sample-plugin)
+2. You can find a sample obsidian plugin here: [obsidianmd/obsidian-sample-plugin (github.com)](https://github.com/obsidianmd/obsidian-sample-plugin) 
+	- Clone This then download the sample main.ts from our discord
 
 ### Deliverables:
 
@@ -69,16 +70,19 @@ Extensions.
 # Task 3. (AI Model Training and Feature Selection)
 Train neural networks, and a neural network generation service, to predict the monthly rent of a given properties using the provided rental listings datasets. 
 
-directory structure:
+directory structure (Download the zip from our discord and unzip into task_03 directory):
+```
 /
 --/models
 --/src
 --/data
 ----/rental_listings
 ----/sale_listings
-
+```
 Basic:
 Using the datasets provided compile, train, and test one neural network for each location (each dataset contains data for separate locations). You may attempt to create a single neural network if it performs as well as the average of the individual neural networks for each location.
+
+## Note: you must compare polar coordinates from the city centre, longitude and latitude, and 1 hot encoding neighborhoods as features in your feature selection process
 
 1. Write a report outlining your hyper parameters, feature selection, and performance (the key metric should be Mean Average Error but include any other insightful performance metrics that you see fit)
 2. Save all compiled models to the models directory 
@@ -92,6 +96,7 @@ Extensions:
 		1. This service is only responsible for scraping rental properties into a dataframe
 		2. it should return a dataframe for use by another service and/or save it for future use by another service
 		3. if saving ensure you extend the directory structure for parameterized retreival
+		4. Test the scraper on Port Coquitlem, BC; Calgary, AB; Barrie, ON; Toronto, ON
 	2. DataClean
 		1. This service is responsible for cleaning data from the DataCollect service for use in the model train service
 	3. ModelTrain
