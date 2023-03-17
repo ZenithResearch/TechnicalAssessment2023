@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  myplugin:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/app
+    command: npm start

@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@octokit/auth-token": "^3.0.3",
+    "@octokit/rest": "^19.0.7",
+    "discord": "^0.8.2",
+    "discord.js": "^12.5.3",
+    "dotenv": "^16.0.3",
+    "install": "^0.13.0",
+    "npm": "^9.6.2",
+    "octokit": "^2.0.14"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "prettier": "2.8.4"
+  }
+}
