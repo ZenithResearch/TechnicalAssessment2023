@@ -35,8 +35,8 @@ Replace YOUR_DISCORD_BOT_TOKEN with your actual Discord bot token, YOUR_GITHUB_P
 
 This project includes a Dockerfile for containerization. To build and run the Docker image:
 
-1. Build the Docker image: `docker build -t discord-plugin .`
-2. Run the Docker container: `docker run -d discord-plugin`
+1. Build the Docker image: `docker compose up -d --build .`
+2. Run the Docker container: `docker compose up`
 
 Note that you will still need to create a config.js file and add it to the Docker image using the `-v` flag or another method.
 
