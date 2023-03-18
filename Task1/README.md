@@ -11,8 +11,8 @@ This is a Node.js-based plugin for creating tasks on GitHub through Discord.
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/example/discord-plugin.git`
-2. Navigate to the project directory: `cd discord-plugin`
+1. Clone this repository
+2. Navigate to the project directory: `cd Task1`
 3. Install the required packages: `npm install`
 4. Create a `config.js` file at the root of the project and add the following:
 
